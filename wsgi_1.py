@@ -26,7 +26,7 @@ def application(environ, start_response):
         month=today.month,
         date=today.day,
         year=today.year,
-        client_ip=environ.get('SERVER_NAME', default),
+        client_ip=environ.get('REMOTE_ADDR', default),
     )
     status = '200 OK'
 
