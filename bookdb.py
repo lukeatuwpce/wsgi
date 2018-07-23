@@ -1,4 +1,3 @@
-
 class BookDB():
     def titles(self):
         titles = [
